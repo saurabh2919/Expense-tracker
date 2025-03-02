@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- https://coolors.co/palette/f4f1de-e07a5f-3d405b-81b29a -->
+    <!-- https://coolors.co/palette/001524-15616d-ffecd1-ff7d00 -->
+    <h1>Expense Tracker</h1>
+    <hr /> 
+    <div id="container">
+        <h2>Add an Expense<h2></h2>
+        <div id="addBox">
+            
+            <div class="inputData">
+                <h4>Enter Description :</h4><input type="text" id="description" placeholder="Reason for expense">
+            </div>
+            <div class="inputData">
+                <h4>Enter amount :</h4><input type="number" id="amount" placeholder="amount of expense">
+            </div>
+            <div class="inputData">
+                <h4>Enter date :</h4><input type="date" id="date" placeholder="date of expense">
+            </div>
+            <button id="addExpenseBtn">Add Expense</button><br /> 
+       </div>
+       <h2>Your Expenses</h2>
+       <div id="displayBox">
+        
+        <table>
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Date</th>
+            </tr>
+        </table>  
+        <h4>Total expenses :</h4><h4 class="totalExp"></h4><br />
+        <button id="resetBtn">Reset</button>
+        <button id="removeBtn">Remove last</button><br />
+   </div>
+    </div>   
+   
+   <script src="./two.js"></script>
+</body>
+</html>
